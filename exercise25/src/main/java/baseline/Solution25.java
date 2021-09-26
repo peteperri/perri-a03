@@ -84,25 +84,27 @@ public class Solution25 {
     }
 
     private void outputCreator(int strength){
+        String str;
         //if strengthLevel is 1 print that the password is very weak
         if(strength == 1){
-            System.out.println("Password is very weak.");
+            str = "very weak";
         }
         //else if 2 print weak
         else if(strength == 2){
-            System.out.println("Password is weak.");
+            str = "weak";
         }
         //else if 3 print strong
         else if(strength == 3){
-            System.out.println("Password is strong.");
+            str = "strong";
         }
         //else if 4 print very strong
         else if(strength == 4){
-            System.out.println("Password is very strong.");
+            str = "very strong";
         }
         //else print unknown strength
         else{
-            System.out.println("Password is of unknown strength.");
+            str = "of unknown strength";
         }
+        System.out.printf("Password is %s.", str);
     }
 }
