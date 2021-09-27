@@ -1,0 +1,5 @@
+
+S	java:S106"9Replace this use of System.out or System.err by a logger.(°ƒ¯¸üÿÿÿÿ
+T	java:S1062"9Replace this use of System.out or System.err by a logger.(íõñ,8Ý¢‚«Â/
+‘
+java:S1319*"vThe type of the "contestants" object should be an interface such as "List" rather than the implementation "ArrayList".(÷³©¯þÿÿÿÿ
