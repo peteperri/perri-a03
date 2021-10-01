@@ -9,16 +9,19 @@ import java.util.concurrent.ThreadLocalRandom;
 
 
 public class Solution32 {
-    Scanner input = new Scanner(System.in);
+    static Scanner input = new Scanner(System.in);
 
     public static void main(String[] args) {
         Solution32 app = new Solution32();
-        //call getDifficultyLevel, set return value to int variable
-        int difficultyLevel = app.getDifficultyLevel();
-        //set int rand to the result of calling getRandom(difficultyLevel)
-        int rand = app.getRandom(difficultyLevel);
-        //call playGame while passing the random number
-        app.playGame(rand);
+        boolean gaming = true;
+        while(gaming) {
+            //call getDifficultyLevel, set return value to int variable
+            int difficultyLevel = app.getDifficultyLevel();
+            //set int rand to the result of calling getRandom(difficultyLevel)
+            int rand = app.getRandom(difficultyLevel);
+            //call playGame while passing the random number
+            gaming = app.playGame(rand);
+        }
     }
 
     private int getDifficultyLevel(){
@@ -56,7 +59,7 @@ public class Solution32 {
         }
     }
 
-    private void playGame(int rand) {
+    private boolean playGame(int rand) {
         boolean notGuessed = true;
         int count = 0;
 
@@ -77,7 +80,10 @@ public class Solution32 {
                 if (guess == rand){
                     notGuessed = false;
                     count++;
-                    System.out.printf("You guessed it! It took you %d guesses.", count);
+                    System.out.printf("You guessed it! It took you %d guesses. Play again? y/n%n", count);
+                    boolean playAgain = input.hasNext("y") || input.hasNext("Y") || input.hasNext("yes" )|| input.hasNext("Yes" );
+                    input.nextLine();
+                    return playAgain;
                 }
                 //if it's too small, say it's too small
                 else if(guess < rand){
@@ -91,6 +97,7 @@ public class Solution32 {
                 }
             }
         }
+        return false;
     }
 }
 
