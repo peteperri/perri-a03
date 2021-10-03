@@ -1,0 +1,22 @@
+
+J
+java:S3740+"/Provide the parametrized type for this generic.(øÙñúùÿÿÿÿ
+J
+java:S3740<"/Provide the parametrized type for this generic.(ëÎ±õüÿÿÿÿ
+J
+java:S3740<"/Provide the parametrized type for this generic.(ëÎ±õüÿÿÿÿ
+E
+java:S3740L"/Provide the parametrized type for this generic.(…äÜª
+X
+java:S1854"=Remove this useless assignment to local variable "employees".(¬¯ øşÿÿÿÿ
+S	java:S106&"9Replace this use of System.out or System.err by a logger.(³ôèõıÿÿÿÿ
+S	java:S1068"9Replace this use of System.out or System.err by a logger.(œ–ÖÀùÿÿÿÿ
+N	java:S106G"9Replace this use of System.out or System.err by a logger.(ş¾ Ä
+Z	java:S106M"9Replace this use of System.out or System.err by a logger.(ÃµÉ®ıÿÿÿÿ8¸ÿĞ˜Ä/
+U	java:S106R"9Replace this use of System.out or System.err by a logger.(Ú‹Ğ8ûŠç˜Ä/
+‹
+java:S1319+"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(øÙñúùÿÿÿÿ
+‹
+java:S1319<"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(ëÎ±õüÿÿÿÿ
+
+java:S1319<"tThe type of the "employees" object should be an interface such as "List" rather than the implementation "ArrayList".(ëÎ±õüÿÿÿÿ

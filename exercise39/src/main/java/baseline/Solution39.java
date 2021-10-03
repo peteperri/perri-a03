@@ -72,12 +72,12 @@ public class Solution39 {
         HashMap<String, String> positions = employees.get(1);
         HashMap<String, String> separationDate = employees.get(2);
 
-        System.out.format("%-15s| %-18s| %-15s%n", "Name", "Position", "Separation Date");
+        System.out.format("%-20s| %-18s| %-15s%n", "Name", "Position", "Separation Date");
         System.out.println("--------------------------------------------------------");
 
         //for loop that iterates through every element of the keys array and prints each hashmap for that respective key
         for (String key : keys) {
-            System.out.format("%-15s| %-18s| %-15s%n", firstNames.get(key), positions.get(key), separationDate.get(key));
+            System.out.format("%-20s| %-18s| %-15s%n", firstNames.get(key) + " " + key, positions.get(key), separationDate.get(key));
         }
     }
 }
